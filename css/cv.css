@@ -48,6 +48,10 @@ body {
 	font-weight: 700 !important;
 }
 
+#exportToPdf {
+	float:right;
+}
+
 .customContent {
 	margin-left: 80px;
 }
