@@ -137,8 +137,17 @@ var cvData = [
 		"title" : "Professional Knowledge",
 		"colorArray" : ["blue", "red", "yellow", "green"],
 		"data" : [{
-			"position" : "Fundamental Knowledge",
-			"company" : "OOP, MVC, ORM, TDD, SQL, IT Security, Design Patterns, Linux, Eclipse IDE, Git",
+			"position" : "Software Engineering Principles",
+			"company" : "Separation of Concerns, Modularity, Abstraction, <br/>Anticipation of Change, Generality, Incremental Development, Consistency",
+			"description" : "",
+			"lDescription" : "",
+			"level" : "",
+			"from" : "",
+			"to" : "",
+			"duration" : ""
+		},{
+			"position" : "Fundamental Development Knowledge",
+			"company" : "OOP, MVC, ORM, TDD, SQL, IT Security, Design Patterns",
 			"description" : "",
 			"lDescription" : "",
 			"level" : "",
@@ -174,7 +183,7 @@ var cvData = [
 			"duration" : ""
 		},{
 			"position" : "Other Languages, Tools and Knowledge",
-			"company" : "Phonegap, C++, OpenGL, Java EE, Hibernate, <br/>Project Management, Scrum, Entrepreneurship, Lean Startup, Google Analytics",
+			"company" : "Linux, Eclipse IDE, Git, Phonegap, C++, OpenGL, Java EE, Hibernate, <br/>Project Management, Scrum, Entrepreneurship, Lean Startup, Google Analytics",
 			"description" : "",
 			"lDescription" : "",
 			"level" : "",
