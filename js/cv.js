@@ -251,7 +251,7 @@ var cvData = [
 			"duration" : "",
 		},{
 			"position" : "General Web Development",
-			"company" : "HTML5, CSS3, Sitebuild, Twitter Bootstrap, Jade",
+			"company" : "HTML5, CSS3, Sitebuild, Twitter Bootstrap, Jade, LESS",
 			"description" : "",
 			"lDescription" : "",
 			"level" : "",
