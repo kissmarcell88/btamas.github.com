@@ -7,7 +7,6 @@ body {
 	padding: 0;
 }
 
-
 .header {
 	height: 40px;
 	line-height: 40px;
@@ -38,10 +37,19 @@ body {
 	position: relative;
 	font-size: 16px;
 	max-width: 900px;
+	cursor:pointer;
 }
 
-.lifeEvent:hover .eventDate, .lifeEvent:hover .eventTitle, .lifeEvent:hover .eventPosition {
+.lifeEvent:hover .eventPosition, .lifeEvent:hover .eventCompany {
+ 	/*margin-left: 10px;*/
 	font-weight: 700 !important;
+}
+.lifeEvent:hover .eventDate {
+	font-weight: 700 !important;
+}
+
+.customContent {
+	margin-left: 80px;
 }
 
 .eventDate {
@@ -59,10 +67,9 @@ body {
 	right: 0;
 }
 
-.eventDate .duration {
+.eventDate .normal {
 	font-size: 13px;
 	font-weight: normal;
-	padding-right: 10px;
 }
 
 .eventData {
@@ -88,19 +95,15 @@ body {
 	border-radius: 100%;
 }
 
-.eventTitle {
+.eventCompany {
 	font-weight: 600;
-	cursor: pointer;
 }
 
 .eventPosition {
 	font-weight: 600;
-	float: left;
-	cursor: pointer;
 }
 
 .eventDescription {
-	float: left;
 	color: #666;
 	margin-left: 5px;
 }
@@ -113,66 +116,6 @@ body {
 
 .clear {
 	clear: both;
-}
-
-.orange .timelineDot div {
-	border-color: #FFB900;
-}
-
-.orange .eventPosition {
-	color: #FFB900;
-}
-
-.orange .eventData {
-	border-left: 4px solid #FFB900;
-}
-
-.red .timelineDot div {
-	border-color: #F2383B;
-}
-
-.red .eventPosition {
-	color: #F2383B;
-}
-
-.red .eventData {
-	border-left: 4px solid #F2383B;
-}
-
-.green .timelineDot div {
-	border-color: #98C917;
-}
-
-.green .eventPosition {
-	color: #98C917;
-}
-
-.green .eventData {
-	border-left: 4px solid #98C917;
-}
-
-.blue .timelineDot div {
-	border-color: #2185C1;
-}
-
-.blue .eventPosition {
-	color: #2185C1;
-}
-
-.blue .eventData {
-	border-left: 4px solid #2185C1;
-}
-
-.purple .timelineDot div {
-	border-color: #D4298F;
-}
-
-.purple .eventPosition {
-	color: #D4298F;
-}
-
-.purple .eventData {
-	border-left: 4px solid #D4298F;
 }
 
 .relevant {
@@ -248,3 +191,22 @@ body {
 		display: none;
 	}
 }
+
+
+
+/* COLORS */
+.blue .timelineDot div { border-color:#0266C8; }
+.blue .eventPosition { color:#0266C8; }
+.blue .eventData { border-left: 4px solid #0266C8; }
+
+.red .timelineDot div { border-color:#F90101; }
+.red .eventPosition { color:#F90101; }
+.red .eventData { border-left: 4px solid #F90101; }
+
+.yellow .timelineDot div { border-color:#F2B50F; }
+.yellow .eventPosition { color:#F2B50F; }
+.yellow .eventData { border-left: 4px solid #F2B50F; }
+
+.green .timelineDot div { border-color:#00933B; }
+.green .eventPosition { color:#00933B; }
+.green .eventData { border-left: 4px solid #00933B; }
