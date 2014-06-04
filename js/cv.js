@@ -28,26 +28,26 @@ $(function(){
 		if (value.type == "timeline") {
 			var colorArray = value.colorArray;
 			
-			$.each(value.data, function(dIndex, dValue){
+			$.each(value.data, function(dIndex, eventData){
 				var eventContainer = $("<div>").addClass("lifeEvent " + colorArray[dIndex % colorArray.length]);
 				
 				var eventDate = $("<div>").addClass("eventDate");
-				eventDate.append($("<div>").html(dValue.level));
-				eventDate.append($("<div>").html(dValue.from));
-				eventDate.append($("<div>").html(dValue.to));
-				eventDate.append($("<div>").addClass("normal").html(dValue.duration));
+				eventDate.append($("<div>").html(eventData.level));
+				eventDate.append($("<div>").html(eventData.from));
+				eventDate.append($("<div>").html(eventData.to));
+				eventDate.append($("<div>").addClass("normal").html(eventData.duration));
 				
-				var eventData = $("<div>").addClass("eventData");
-				eventData.append($("<div>").addClass("timelineDot").html($("<div>")));
-				eventData.append($("<div>").addClass("eventPosition").html(dValue.position));
-				eventData.append($("<div>").addClass("eventCompany").html(dValue.company));
-				eventData.append($("<div>").addClass("eventLocation").html(dValue.location));
-				eventData.append($("<div>").addClass("eventDescription").html(dValue.description));
-				eventData.append($("<div>").addClass("clear"));
-				eventData.append($("<div>").addClass("eventLongDescription").html(dValue.lDescription));
+				var eventHtml = $("<div>").addClass("eventData");
+				eventHtml.append($("<div>").addClass("timelineDot").html($("<div>")));
+				eventHtml.append($("<div>").addClass("eventPosition").html(eventData.title));
+				eventHtml.append($("<div>").addClass("eventCompany").html(eventData.subtitle));
+				eventHtml.append($("<div>").addClass("eventLocation").html(eventData.location));
+				eventHtml.append($("<div>").addClass("eventDescription").html(eventData.description));
+				eventHtml.append($("<div>").addClass("clear"));
+				eventHtml.append($("<div>").addClass("eventLongDescription").html(eventData.lDescription));
 				
 				eventContainer.append(eventDate);
-				eventContainer.append(eventData);
+				eventContainer.append(eventHtml);
 				dataContainer.append(eventContainer);
 			});
 		} else if (value.type == "custom") {
