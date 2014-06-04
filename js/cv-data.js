@@ -77,7 +77,7 @@ var cvData = [
 	},
 	{
 		"type" : "timeline",
-		"title" : "Educational background",
+		"title" : "<br/>Educational background",
 		"colorArray" : ["blue", "red", "yellow", "green"],
 		"data" : [{
 			"title" : "Budapest University of Technology and Economics",
