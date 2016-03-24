@@ -1,0 +1,216 @@
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700&subset=latin-ext,latin);
+
+body {
+	font-family: 'Source Sans Pro', sans-serif;
+	overflow-y: scroll;
+	margin: 0;
+	padding: 0;
+}
+
+.header {
+	height: 40px;
+	line-height: 40px;
+	font-size: 18px;
+	background-color: black;
+	color: white;
+	font-weight: 600;
+	padding-left: 20px;
+}
+
+.container {
+	width: 1000px;
+	margin: 0 auto;
+	padding-bottom: 50px;
+}
+
+.sectionTitle {
+	font-size: 20px;
+	font-weight: 600;
+	padding-bottom: 30px;
+	padding-left: 20px;
+	padding-top: 50px;
+	text-transform: uppercase;
+}
+
+.lifeEvent {
+	padding-left: 170px;
+	position: relative;
+	font-size: 16px;
+	max-width: 900px;
+	cursor:pointer;
+}
+
+.lifeEvent:hover .eventPosition, .lifeEvent:hover .eventCompany {
+ 	/*margin-left: 10px;*/
+	font-weight: 700 !important;
+}
+.lifeEvent:hover .eventDate {
+	font-weight: 700 !important;
+}
+
+#exportToPdf {
+	float:right;
+}
+
+.customContent {
+	margin-left: 80px;
+}
+
+.eventDate {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	color: #666;
+	font-weight: 600;
+	text-align: right;
+	width: 150px;
+	font-size: 14px;
+}
+
+.eventDate div {
+	right: 0;
+}
+
+.eventDate .normal {
+	font-size: 13px;
+	font-weight: normal;
+}
+
+.eventData {
+	border-left: 4px solid #E9E9E9;
+	padding-left: 20px;
+	position: relative;
+	padding-bottom: 20px;
+	min-height: 60px;
+}
+
+.timelineDot {
+	position: absolute;
+	top: -2px;
+	left: -14px;
+	border-radius: 100%;
+	width: 13px;
+	height: 13px;
+	border: 5px solid white;
+}
+
+.timelineDot div {
+	border: 7px solid red;
+	border-radius: 100%;
+}
+
+.eventCompany {
+	font-weight: 600;
+}
+
+.eventPosition {
+	font-weight: 600;
+}
+
+.eventDescription {
+	color: #666;
+	margin-left: 5px;
+}
+
+.eventLongDescription {
+	display: none;
+	font-size: 14px;
+	padding-top: 10px;
+}
+
+.clear {
+	clear: both;
+}
+
+.relevant {
+	font-weight: bold;
+}
+
+.photo {
+	height: 150px;
+	margin-left: 20px;
+	margin-top: 50px;
+	float: left;
+}
+
+.summary {
+	float: left;
+	margin-left: 30px;
+	margin-top: 50px;
+	width: 750px;
+	font-size: 14px;
+}
+
+.summary p {
+	margin-top: 0;
+	margin-bottom: 5px;
+}
+
+.social-icons {
+	float: left;
+	padding: 10px 0 0 30px;
+}
+
+.social-icons a, .social-icons a:visited {
+	color: #888;
+}
+
+.facebook:hover {
+	color: #3B5998 !important;
+}
+
+
+.linkedin:hover {
+	color: #4875B4 !important;
+}
+
+.twitter:hover {
+	color: #33CCFF !important;
+}
+
+.github:hover {
+	color: #000 !important;
+}
+
+.email, .email:visited {
+	color: #2185C1;
+	text-decoration: none;
+}
+
+.email:hover {
+	text-decoration: underline;
+}
+
+@media print {
+	.lifeEvent {
+		page-break-inside: avoid;
+	}
+
+	.eventLongDescription {
+		display: block !important;
+		height: auto !important;
+	}
+
+	.social-icons {
+		display: none;
+	}
+}
+
+
+
+/* COLORS */
+.blue .timelineDot div { border-color:#0266C8; }
+.blue .eventPosition { color:#0266C8; }
+.blue .eventData { border-left: 4px solid #0266C8; }
+
+.red .timelineDot div { border-color:#F90101; }
+.red .eventPosition { color:#F90101; }
+.red .eventData { border-left: 4px solid #F90101; }
+
+.yellow .timelineDot div { border-color:#F2B50F; }
+.yellow .eventPosition { color:#F2B50F; }
+.yellow .eventData { border-left: 4px solid #F2B50F; }
+
+.green .timelineDot div { border-color:#00933B; }
+.green .eventPosition { color:#00933B; }
+.green .eventData { border-left: 4px solid #00933B; }
